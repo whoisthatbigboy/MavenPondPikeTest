@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pondpike.SignUpController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="150.0" style="-fx-background-color: #3167d4;" AnchorPane.leftAnchor="0.0">
+         <children>
+            <Button layoutX="55.0" layoutY="14.0" mnemonicParsing="false" onAction="#returnHome" prefHeight="25.0" prefWidth="30.0" style="-fx-background-color: white;">
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Pictures/Pond%20Pike%20Pictures/HomeIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <ImageView fitHeight="95.0" fitWidth="110.0" layoutX="29.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/Pondpike%20logo%201.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="32.0" layoutY="361.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0" style="-fx-background-color: #3167d4;" text="Reset Fields" underline="true" />
+         </children>
+      </Pane>
+      <AnchorPane layoutX="155.0" layoutY="5.0" prefHeight="391.0" prefWidth="539.0" AnchorPane.bottomAnchor="3.6666666666666856" AnchorPane.rightAnchor="5.666666666666629" AnchorPane.topAnchor="5.0">
+         <children>
+            <GridPane layoutX="28.0" layoutY="59.0" prefHeight="308.0" prefWidth="483.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="200.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="168.0000508626302" minWidth="10.0" prefWidth="98.33335367838538" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="207.66668701171875" minWidth="10.0" prefWidth="204.33331298828125" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="34.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="23.333343505859375" minHeight="10.0" prefHeight="22.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextField prefHeight="10.0" prefWidth="193.0" promptText="Password" style="-fx-border-color: white white black white; -fx-background-color: white;" GridPane.rowIndex="4" />
+                  <TextField style="-fx-border-color: white white black white; -fx-background-color: white;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <TextField promptText="Full Name" style="-fx-border-color: white white black white; -fx-background-color: white;" />
+                  <TextField style="-fx-border-color: white white black white; -fx-background-color: white;" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <TextField promptText="E-Mail" style="-fx-border-color: white white black white; -fx-background-color: white;" GridPane.rowIndex="2" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Address:" GridPane.columnIndex="2">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <TextField style="-fx-border-color: white white black white; -fx-background-color: white;" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <TextField promptText="Post Code" style="-fx-border-color: white white black white; -fx-background-color: white;" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                  <TextField promptText="Confirm Password" style="-fx-border-color: white white black white; -fx-background-color: white;" GridPane.rowIndex="6" />
+                  <TextField promptText="Security Question" style="-fx-border-color: white white black white; -fx-background-color: white;" GridPane.rowIndex="8" />
+                  <TextField promptText="Security Answer" style="-fx-border-color: white white black white; -fx-background-color: white;" GridPane.rowIndex="10" />
+                  <CheckBox mnemonicParsing="false" prefHeight="59.0" prefWidth="197.0" text="I agree to the terms and &#10;conditions" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="137.0" style="-fx-background-color: #61bdff;" text="Continue" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+               </children>
+            </GridPane>
+            <Label layoutX="30.0" layoutY="14.0" text="Details" textFill="#3167d4">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Separator layoutX="14.0" layoutY="39.0" prefHeight="14.0" prefWidth="495.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
