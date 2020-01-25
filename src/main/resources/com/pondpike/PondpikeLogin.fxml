@@ -74,7 +74,7 @@
       </AnchorPane>
       <ImageView fitHeight="42.0" fitWidth="39.0" layoutX="189.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="189.0" AnchorPane.topAnchor="69.0">
          <image>
-            <Image url="@../Pictures/Pondpike%20logo%201.png" />
+            <Image url="@Images/Pondpikelogo1.png" />
          </image>
       </ImageView>
    </children>

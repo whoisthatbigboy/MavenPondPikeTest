@@ -23,13 +23,13 @@
                <graphic>
                   <ImageView fitHeight="22.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../Pictures/Pond%20Pike%20Pictures/HomeIcon.png" />
+                        <Image url="@Images/HomeIcon.png" />
                      </image>
                   </ImageView>
                </graphic></Button>
             <ImageView fitHeight="95.0" fitWidth="110.0" layoutX="29.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../Pictures/Pondpike%20logo%201.png" />
+                  <Image url="@Images/Pondpikelogo1.png" />
                </image>
             </ImageView>
             <Button layoutX="32.0" layoutY="361.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0" style="-fx-background-color: #3167d4;" text="Reset Fields" underline="true" />
